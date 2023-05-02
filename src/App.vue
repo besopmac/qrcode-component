@@ -1,5 +1,10 @@
 <template>
-  <h1 class="text-3xl">Hello</h1>
+  <Metainfo>
+    <template #title="{ content }">
+      {{ content ? `${content}` : 'Frontend Mentor Challenge - QRCode Component' }}
+    </template>
+  </Metainfo>
+  <RouterView />
 </template>
 
 <script>
